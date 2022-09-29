@@ -14,6 +14,7 @@ function App() {
   const runCoco = async () => {
     //Load network 
     const net = await cocossd.load();
+	console.log("Model has been loaded");
     //Loop and detect hands
     setInterval(() => {
       detect(net);
